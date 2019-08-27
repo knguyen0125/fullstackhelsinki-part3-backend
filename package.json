@@ -8,6 +8,7 @@
     "deploy": "git push heroku master",
     "gitsave": "git push origin master",
     "deploy:full": "npm run build:ui && git add . && git commit -m 'uibuild' && npm run deploy",
+    "deploy:backend": "git add . && git commit -m 'backendbuild' && npm run deploy",
     "start": "node index.js",
     "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +18,9 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "mongoose": "^5.6.11",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
