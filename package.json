@@ -11,7 +11,8 @@
     "deploy:backend": "git add . && git commit -m 'backendbuild' && npm run deploy",
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "eslint": "^6.2.2",
     "nodemon": "^1.19.1"
   }
 }
